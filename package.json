@@ -1,0 +1,26 @@
+{
+  "name": "anti-afk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pkg": "pkg ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "outputPath": "build",
+    "scripts": [
+      "index.js"
+    ],
+    "targets": [
+      "node18-win"
+    ]
+  }
+}
