@@ -1,6 +1,6 @@
 const robot = require("robotjs");
 
-const intervalInMinute = (process.argv[2] || 5) * 1000 * 60;
+const intervalInMinute = parseInt(process.argv[2] || 5) * 60000;
 
 function* range(start, stop, step = 1) {
   if (stop == null) {
@@ -29,6 +29,7 @@ function moveMouse() {
       robot.moveMouse(_x, _y);
     }
   }
+  console.log("Wait for", intervalInMinute / 60000, "minutes");
 }
 
 moveMouse();

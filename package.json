@@ -10,9 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "robotjs": "^0.6.0"
-  },
   "bin": "index.js",
   "pkg": {
     "outputPath": "build",
@@ -20,7 +17,11 @@
       "index.js"
     ],
     "targets": [
-      "node18-win"
+      "node16-win",
+      "node16-linux"
     ]
+  },
+  "dependencies": {
+    "robotjs": "^0.6.0"
   }
 }
